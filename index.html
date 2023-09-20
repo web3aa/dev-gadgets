@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+        
+      </div>
     <header class="header">
         <div class="header-content">
             <a href="#" class="header-ttl">
@@ -22,14 +25,32 @@
                 <span class="cart-nb">0</span>
             </a>
         </div>
+       <!-- autres éléments du header -->
+  <div class="cart">
+    <span class="cart-counter">0</span>
+    <span class="cart-label">Articles</span>   
+  
+</div>
     </header>
+
+    <div class="header">
+        <!-- autres éléments du header -->
+        <div class="cart">
+          <span class="cart-counter">0</span>
+          <span class="cart-label">Articles</span>
+        </div>
+      </div>
     <main class="page">
         <h1 class="page-ttl">Canard jaune pour la revue de code</h1>
         <section class="page-pics">
             <div class="pictures">
-                <button type="button" class="pictures-handler pictures-prev">◀️</button>
+                <button type="button" class="pictures-handler pictures-prev" id="showPreviousImage">◀️</button>
                 <img class="pictures-img" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur">
-                <button type="button" class="pictures-handler pictures-next">▶️</button>
+                
+                <button type="button" class="pictures-handler pictures-next" id=" showNextImage">▶️</button>
+
+                
+   
                 <ul class="thumbs">
                     <li class="thumbs-itm">
                         <img class="thumbs-img" src="img/canard-jaune-1-s.png" alt="canard">
@@ -48,13 +69,16 @@
                     </li>
                 </ul>
             </div>
+
             <div class="price">
                 11€95
             </div>
+            <div class="product-details">
+                
             <div class="add">
                 <input class="add-qty" type="text" value="1">
                 <button class="add-cta" type="button">Ajouter au panier</button>
-            </div>
+            </div> 
         </section>
         <section class="page-txt page-section">
             <p class="product-descr">Ce canard va devenir votre meilleur allié pour le développement de vos projets les plus ambitieux ! Fidèle compagnon qui trônera à côté de vos écrans, vous pourrez lui expliquer les problèmes que vous rencontrez avec votre code : refactoring, bugs, algo complexe, … Ce nouveau collègue discret et joyeux vous aidera à trouver les solutions à toutes vos problématiques !</p>
@@ -148,5 +172,8 @@
         </ul>
         <div class="footer-cp">© 2022 - Dev Gadgets</div>
     </footer>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
